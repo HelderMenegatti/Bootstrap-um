@@ -1,3 +1,7 @@
+article {
+    width: 18rem;
+}
+
 .imagem-carrossel-um {
     object-fit: cover;
     object-position: 0 70%;
@@ -15,4 +19,17 @@
 
 .cor-especial {
     color: darkred;
+}
+
+.botão-cor-especial {
+    background-color: darkred;
+    color: white;
+}
+
+.card-cor-especial {
+    border-color: darkred;
+}
+.card-posicao-imagem {
+    object-fit: cover;
+    height: 200px;
 }
