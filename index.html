@@ -15,7 +15,7 @@
 <body>
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-      <a class="navbar-brand" href="#">fruto & fruta</a>
+      <a class="navbar-brand fonte-titulo texto-cor-especial" href="#">fruto & fruta</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -31,7 +31,7 @@
             <a class="nav-link" href="#">quem somos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">contato</a>
+            <a class="nav-link" data-toggle="modal" data-target="#modal-contato" href="#">contato</a>
           </li>
         </ul>
       </div>
@@ -133,10 +133,44 @@
         </article>
       </div>
     </section>
- </main>
+  </main>
+  <footer class="bg-secondary p-3">
+      <p class="text-light m-0 text-center">contato: <a class="text-light" href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+  </footer>
 
-
-  <p>contato:<a href="mailto:email@frutafruto.com.br">email@frutafruto.com.br</a></p>
+<!-- Modal -->
+<div class="modal fade" id="modal-contato" tabindex="-1" aria-labelledby="modal-contato" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Contato</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="form-group">
+            <label for="formGroupExampleInput">Nome</label>
+            <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Digite seu nome completo">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Email</label>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nome@explo.com">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Texto</label>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Digite seu comentario"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+        <button type="button" class="btn botão-cor-especial">Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>
 
   <script src=""></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

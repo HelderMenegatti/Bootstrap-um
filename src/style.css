@@ -33,3 +33,7 @@ article {
     object-fit: cover;
     height: 200px;
 }
+
+.texto-cor-especial {
+    color: darkred!important;
+}
